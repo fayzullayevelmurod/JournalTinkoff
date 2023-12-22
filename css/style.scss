@@ -1,6 +1,576 @@
-
-
-
-
-
 @import 'responsive';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #12151C;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+button{
+    border: none;
+    outline: none;
+}
+a:hover{
+    color: inherit;
+}
+ul li{
+    list-style: none;
+}
+
+a,
+img,
+span,
+input,
+textarea,
+button,
+svg,
+path {
+	transition: .3s all ease;
+}
+
+.wrapper{
+    overflow-x: hidden;
+}
+.container-fluid{
+    max-width: 100%;
+    padding: 0px 30px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 800px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.sec-title{
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 35px; 
+}
+
+// Header start
+.header{
+    padding: 20px 0;
+    border-bottom: 1px solid #3E4146;
+    background: #12151C;
+
+    .header-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .header-nav-wrap{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .header-nav-link{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-radius: 20px;
+                border: 1px solid #3E4146;
+                background: #20232A;
+                height: 40px;
+                padding: 5px 19.8px 5px 5px;
+                color: #FFF;
+                font-size: 17px;
+                font-weight: 700;
+                line-height: 20px;
+                
+                img{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 15px;
+                    background: #8054FF;
+                    padding: 5px 8.53px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .header-menu{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
+// Header end
+
+// Main start
+.main-sec{
+    padding: 50px 0px 100px;
+
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
+        .main-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            .main-complexity{
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                margin-bottom: 7px;
+
+                span{
+                    color: #D0D0D2;
+                    font-size: 14.648px;
+                    line-height: 20px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+            }
+            .main-info-title{
+                color: #FFF;
+                font-size: 43.418px;
+                font-weight: 700;
+                line-height: 50px;
+                margin-bottom: 15px;
+            }
+            .main-info-text{
+                color: #D0D0D2;
+                font-size: 29.414px;
+                line-height: 35px;
+                margin-bottom: 37px;
+            }
+            .main-info-link{
+                width: 205.25px;
+                height: 50px;
+                padding: 16px 24.8px 17px 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                background: #5869D3;
+                color: #FFF;
+                font-size: 16.602px;
+                line-height: 20px; 
+            }
+        }
+    }
+}
+// Main end
+
+//Financial start
+.financial{
+    padding-bottom: 73px;
+
+    .financial-content{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .financial-info{
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            .financial-text{
+                color: #D0D0D2;
+                font-size: 16.602px;
+                line-height: 25px;
+            }
+        }
+
+        .financial-imgs{
+            .financial-img{
+                width: 100%;
+            }
+            .financial-img2{
+                display: none;
+            }
+        }
+    }
+}
+// Financial end
+
+// Course start
+.course{
+    padding-bottom: 73px;
+
+    .course-content{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .course-info{
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            .course-text{
+                color: #D0D0D2;
+                font-size: 16.469px;
+                line-height: 25px; 
+            }
+        }
+
+        .course-cards{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .course-card{
+                position: relative;
+                border-radius: 15px;
+                border: 1px solid #3E4146;
+                background: #20232A;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    right: 15px;
+                    bottom: 15px;
+                    width: 25px;
+                    height: 25px;
+                    background-image: url(../images/icons/card-arrow-icon.svg);
+                }
+                
+                .cours__card-wrap{
+                    display: flex;
+                    align-items: start;
+                    gap: 41px;
+                    padding: 20px 25px 25px 25px;
+
+                    .course__card-content{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+
+                        .course__card-top{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+
+                            .course__card-info{
+                                display: flex;
+                                align-items: center;
+                                gap: 5px;
+                                .course__card-icon{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 9px;
+                                    span{
+                                        color: #D0D0D2;
+                                        font-size: 14.531px;
+                                        line-height: 20px;
+                                    }
+                                }
+
+                                .course-card-time{
+                                    color: #FFF;
+                                    font-size: 12.594px;
+                                    line-height: 15px;
+                                    border-radius: 10px;
+                                    background: #36393F;
+                                    display: flex;
+                                    height: 20px;
+                                    padding: 4px 9.8px 3px 10px;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                            }
+
+                            .course__card-title{
+                                color: #FFF;
+                                font-size: 20.508px;
+                                font-weight: 600;
+                                line-height: 25px;
+                                max-width: 445px;
+                            }
+                        }
+
+                        .course__card-text{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 18px;
+                            max-width: 517px;
+                            p{
+                                color: #D0D0D2;
+                                font-size: 16.469px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .course-diplom img{
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .part-course{
+            margin-top: 10px;
+            border-radius: 15px;
+            border: 1px solid #3E4146;
+            background: #20232A;
+            padding: 30px 36px 25px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .part__course-top{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                max-width: 590px;
+
+                .part-course-text{
+                    color: #D0D0D2;
+                    font-size: 16.469px;
+                    line-height: 25px; 
+                }
+            }
+
+            .part__course-items{
+                display: grid;
+                grid-template-columns: 48% 49%;
+                gap: 20px;
+
+                .part__course-item{
+                    display: flex;
+                    align-items: start;
+                    gap: 15px;
+
+                    .course-item-info{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 9px;
+                        
+                        b{
+                            color: #FFF;
+                            font-size: 16.336px;
+                            font-weight: 700;
+                            line-height: 20px;
+                        }
+                        p{
+                            color: #D0D0D2;
+                            font-size: 14.648px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .course-suitable{
+            margin-top: 13px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .course-suitable-info{
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
+
+                .course-suitable-text{
+                    color: #D0D0D2;
+                    font-size: 16.602px;
+                    line-height: 25px;
+                }
+            }
+
+            .course__suitable-boxs{
+                display: grid;
+                grid-template-columns: 49% 49%;
+                gap: 20px;
+
+                .course__suitable-box{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    p{
+                        color: #D0D0D2;
+                        font-size: 16.203px;
+                        line-height: 25px; 
+                    }
+                }
+            }
+        }
+
+        .course-suitable-img img{
+            margin-top: 10px;
+            width: 100%;
+        }
+    }
+}
+// Course end
+
+// Practice start
+.practice{
+    padding-bottom: 70px;
+
+    .practice-content{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+
+        .practice-info{
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+
+            .practice-text{
+                color: #D0D0D2;
+                font-size: 16.602px;
+                line-height: 25px;
+            }
+        }
+
+        .practice-imgs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .practice-img{
+                width: 100%;
+            }
+        }
+    }
+}
+// Practice end
+
+// Experts start
+.experts{
+    padding-bottom: 81px;
+
+    .experts-items{
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: 49% 49%;
+        gap: 20px 25px;
+
+        .experts-item{
+            display: flex;
+            align-items: start;
+            gap: 15px;
+
+            .experts-item-img{
+                border-radius: 100px;
+            }
+
+            .experts-item-title{
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                margin-bottom: 5px;
+
+                a{
+                    color: #FFF;
+                    font-size: 14.883px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    border-bottom: 1px solid #d0d0d280;
+                }
+            }
+            .experts-item-text{
+                color: #D0D0D2;
+                font-size: 14.648px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+// Experts end
+
+
+
+
+
+// Footer start
+.footer-content{
+    padding: 16px 0px 20px;
+    border-top: 1px solid #3E4146;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+
+    .footer-top{
+        display: flex;
+        align-items: start;
+        gap: 30px;
+
+        .footer-socicial{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            .footer-socicial-link{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 12px;
+                background: #3390EC;
+
+                &:hover{
+                    background: #56a5f4;
+                }
+            }
+        }
+
+        .footer-top-nav{
+            max-width: 540px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px 15px;
+
+            .footer-nav-link{
+                color: #888A8D;
+                font-size: 16.469px;
+                line-height: 25px;
+
+                &:hover{
+                    color: #FFF;
+                }
+            }
+        }
+    }
+
+    .footer-bottom{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .footer-bottom-text{
+            color: #888A8D;
+            font-size: 12.594px;
+            line-height: 15px; 
+            max-width: 238px;
+
+            a{
+                font-size: 13px;
+                &:hover{
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
+// Footer end
