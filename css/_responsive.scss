@@ -1,0 +1,276 @@
+
+@media only screen and (max-width: 620px) {
+
+    .container-fluid{
+        padding: 0px 20px;
+    }
+    .sec-title{
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    // Header Media
+    .header {
+        border: none;
+        padding: 15px 0 30px;
+        .header-content{
+            align-items: start;
+
+            .header-nav-wrap{
+                flex-direction: column;
+                gap: 25px;
+                padding-top: 7px;
+            }
+
+            .header-menu{
+                gap: 13px;
+            }
+        }
+    }
+
+    // Main media
+    .main-sec{
+        padding: 0px 0px 71px;
+
+        .main-content{
+            .main-info{
+                align-items: start;
+                text-align: start;
+
+                .main-complexity{
+                    gap: 2px;
+                    span{
+                        font-size: 12px;
+                    }
+                }
+                .main-info-title{
+                    font-size: 31px;
+                    line-height: 35px;
+                }
+                .main-info-text{
+                    font-size: 23px;
+                    margin-bottom: 28px;
+                }
+                .main-info-link{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // Financial media
+    .financial{
+        padding-bottom: 53px;
+
+        .financial-content{
+            .financial-imgs{
+                .financial-img1{
+                    display: none;
+                }  
+                .financial-img2{
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    // Course media
+    .course {
+        padding-bottom: 53px;
+
+        .container{
+            padding: 0;
+        }
+
+        .course-content{
+            gap: 50px;
+            .course-info{
+                padding: 0px 20px;
+            }
+            .course-cards{
+
+                .course-card{
+
+                    .cours__card-wrap{
+                        padding: 20px 20px 66px 20px;
+                        flex-direction: row-reverse;
+                        gap: 20px;
+                        justify-content: space-between;
+
+                        .course-img{
+                            position: absolute;
+                            top: 20px;
+                            right: 20px;
+                        }
+
+                        .course__card-content{
+                            .course__card-top{
+                                .course-card-times{
+                                    position: absolute;
+                                    bottom: 22px;
+                                    left: 20px;
+                                }
+                                .course__card-title{
+                                    padding-right: 110px;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .course-diplom{
+                padding: 0px 20px;
+                .diplom-img1{
+                    display: none;
+                }
+                .diplom-img2{
+                    display: flex;
+                }
+            }
+            .part-course{
+                margin-top: 0;
+                padding: 24px 31px 20px 20px;
+
+                .part__course-items{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .course-suitable{
+                padding: 0px 16px;
+                margin-top: 0;
+                .course__suitable-boxs{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .course-suitable-imgs{
+                padding: 0px 20px;
+                .course-suitable-img1{
+                    display: none;
+                }
+                .course-suitable-img2{
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    // Practice media
+    .practice{
+        padding-bottom: 50px;
+        .container{
+            padding: 0;
+        }
+        .practice-content{
+            .practice-info{
+                padding: 0px 20px;
+            }
+        }
+    }
+
+    // Experts media
+    .experts{
+        padding-bottom: 61px;
+        .experts-items{
+            grid-template-columns: 100%;
+            .experts-item{
+                gap: 10px;
+                .experts-item-img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+    
+    // Review media
+    .review{
+        padding-bottom: 30px;
+        .container{
+            padding: 0;
+        }
+
+        .review-content{
+            .review-progress,
+            .review-title {
+                padding: 0px 20px;
+            }
+            .review-comment{
+                margin-top: 26px;
+                .review__comment-item{
+                    padding: 25px 20px 20px;
+                }
+            }
+        }
+    }
+
+    // Course app media
+    .course-app{
+        padding-bottom: 57px;
+        .container{
+            gap: 53px;
+            .course__app-content{
+                .course-app-imgs{
+                    .course-app-img1{
+                        display: none;
+                    }
+                    .course-app-img2{
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+
+    // Course team media
+    .course-team{
+        padding-bottom: 75px;
+        .course-team-content{
+            grid-template-columns: 100%;
+            gap: 32px;
+
+            .course-team-items{
+                .course-team-item{
+                    gap: 20px;
+                } 
+            }
+        }
+    }
+
+    // More course media
+    .more-course{
+        .container{
+            padding: 0;
+        }
+        .more__course-content{
+            padding: 21px 37px 20px 21px;
+
+            .more__course-items{
+                grid-template-columns: 100%;
+            }
+        }
+    }
+
+    // Footer media 
+    .footer{
+        .container-fluid{
+            padding: 0;
+        }
+        .footer-content{
+            padding: 40px 20px;
+            gap: 82px;
+
+            .footer-top{
+                flex-direction: column;
+                gap: 23px;
+
+                .footer-top-nav{
+                    flex-direction: column;
+                    gap: 5px;
+                }
+            }
+        }
+    }
+
+}
