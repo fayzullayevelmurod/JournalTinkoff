@@ -24,6 +24,13 @@
 
             .header-menu{
                 gap: 13px;
+
+                .header-search-wrap.active{
+                    position: absolute;
+                    left: 0;
+                    padding: 0px 20px;
+                    width: 100%;
+                }
             }
         }
     }
