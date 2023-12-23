@@ -160,14 +160,6 @@
     // Practice media
     .practice{
         padding-bottom: 50px;
-        .container{
-            padding: 0;
-        }
-        .practice-content{
-            .practice-info{
-                padding: 0px 20px;
-            }
-        }
     }
 
     // Experts media
@@ -187,15 +179,8 @@
     // Review media
     .review{
         padding-bottom: 30px;
-        .container{
-            padding: 0;
-        }
 
         .review-content{
-            .review-progress,
-            .review-title {
-                padding: 0px 20px;
-            }
             .review-comment{
                 margin-top: 26px;
                 .review__comment-item{

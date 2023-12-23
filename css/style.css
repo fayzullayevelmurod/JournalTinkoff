@@ -960,12 +960,6 @@ path {
   .practice {
     padding-bottom: 50px;
   }
-  .practice .container {
-    padding: 0;
-  }
-  .practice .practice-content .practice-info {
-    padding: 0px 20px;
-  }
   .experts {
     padding-bottom: 61px;
   }
@@ -980,13 +974,6 @@ path {
   }
   .review {
     padding-bottom: 30px;
-  }
-  .review .container {
-    padding: 0;
-  }
-  .review .review-content .review-progress,
-  .review .review-content .review-title {
-    padding: 0px 20px;
   }
   .review .review-content .review-comment {
     margin-top: 26px;
