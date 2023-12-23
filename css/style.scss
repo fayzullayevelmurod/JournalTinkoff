@@ -388,6 +388,16 @@ path {
                                         font-size: 14.531px;
                                         line-height: 20px;
                                     }
+
+                                    b{
+                                        margin-left: 19px;
+                                        font-size: 14.766px;
+                                        line-height: 20px;
+                                        background: linear-gradient(98deg, #FEE487 0%, #D8A93E 52%, #D0952C 92%);
+                                        background-clip: text;
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                    }
                                 }
 
                                 .course-card-times{
@@ -414,6 +424,12 @@ path {
                                 font-weight: 600;
                                 line-height: 25px;
                                 max-width: 445px;
+                            }
+                            .course__card-title-gold{
+                                background: linear-gradient(97deg, #FEE487 0%, #D8A93E 52%, #D0952C 92%);
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
                             }
                         }
 
@@ -469,7 +485,7 @@ path {
 
                 .course__suitable-box{
                     display: flex;
-                    align-items: center;
+                    align-items: start;
                     gap: 20px;
 
                     p{
@@ -649,6 +665,14 @@ path {
                         height: 1px;
                         border-radius: 1px 0px 0px 1px;
                         background: #FFF;
+                    }
+                }
+                .ponimanie__progress-item{
+                    .review__progress-line1::after{
+                        width: 90%;
+                    }
+                    .review__progress-line2::after{
+                        width: 44px;
                     }
                 }
             }

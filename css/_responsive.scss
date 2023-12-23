@@ -111,6 +111,7 @@
                         }
 
                         .course__card-content{
+                            margin-right: auto;
                             .course__card-top{
                                 .course-card-times{
                                     position: absolute;
@@ -246,4 +247,17 @@
         }
     }
 
+}
+
+
+@media only screen and (max-width: 370px){
+    .header{
+        .header-content{
+            .header-menu{
+                .header-notification-item{
+                    width: 93%;
+                }
+            }
+        }
+    }
 }
