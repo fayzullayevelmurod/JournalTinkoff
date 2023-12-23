@@ -128,15 +128,6 @@
                     display: flex;
                 }
             }
-            .part-course{
-                margin-top: 0;
-                padding: 24px 31px 20px 20px;
-
-                .part__course-items{
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
             .course-suitable{
                 padding: 0px 16px;
                 margin-top: 0;
@@ -195,16 +186,6 @@
         padding-bottom: 57px;
         .container{
             gap: 53px;
-            .course__app-content{
-                .course-app-imgs{
-                    .course-app-img1{
-                        display: none;
-                    }
-                    .course-app-img2{
-                        display: flex;
-                    }
-                }
-            }
         }
     }
 

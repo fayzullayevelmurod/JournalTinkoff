@@ -337,78 +337,6 @@ path {
             }
         }
 
-        .part-course{
-            margin-top: 10px;
-            border-radius: 15px;
-            border: 1px solid #3E4146;
-            background: #20232A;
-            padding: 30px 36px 25px 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            transition: .3s ease all;
-
-            &:hover{
-                border-color: #5b5f65;
-            }
-
-            .part__course-top{
-                display: flex;
-                flex-direction: column;
-                gap: 14px;
-                max-width: 590px;
-
-                .part-course-text{
-                    color: #D0D0D2;
-                    font-size: 16.469px;
-                    line-height: 25px; 
-                }
-            }
-
-            .part__course-items{
-                display: grid;
-                grid-template-columns: 48% 49%;
-                gap: 20px;
-
-                .part__course-item{
-                    display: flex;
-                    align-items: start;
-                    gap: 15px;
-
-                    .course-item-info{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 9px;
-                        
-                        b{
-                            color: #FFF;
-                            font-size: 16.336px;
-                            font-weight: 700;
-                            line-height: 20px;
-                        }
-                        p{
-                            color: #D0D0D2;
-                            font-size: 14.648px;
-                            line-height: 20px;
-                        }
-                    }
-                }
-            }
-
-            .part-course-link{
-                color: #D0D0D2;
-                font-size: 17px;
-                line-height: 20px; 
-                display: flex;
-                align-items: center;
-                gap: 8px;
-
-                &:hover{
-                    color: #FFF;
-                }
-            }
-        }
-
         .course-suitable{
             margin-top: 13px;
             display: flex;
@@ -709,30 +637,6 @@ path {
         display: flex;
         flex-direction: column;
         gap: 73px;
-
-        .course__app-content{
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-    
-            .course-app-download{
-                color: #D0D0D2;
-                font-size: 16.336px;
-                line-height: 25px; 
-                margin-top: 4px;
-                background: rgba(208, 208, 210, 0.50);
-                max-width: fit-content;
-            }
-    
-            .course-app-imgs {
-                .course-app-img{
-                    width: 100%;
-                }
-                .course-app-img2{
-                    display: none;
-                }
-            }
-        }
 
         .course-write,
         .course-answer,
