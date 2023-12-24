@@ -498,6 +498,9 @@ path {
         }
 
         .course-suitable-imgs{
+            .suitable-imgs-title{
+                margin-bottom: 24px;
+            }
             .course-suitable-img{
                 width: 100%;
             }
@@ -673,6 +676,15 @@ path {
                     }
                     .review__progress-line2::after{
                         width: 44px;
+                    }
+                }
+
+                .dengi__progress-item{
+                    .review__progress-line1::after{
+                        width: 100%;
+                    }
+                    .review__progress-line2::after{
+                        width: 0;
                     }
                 }
             }
@@ -927,6 +939,244 @@ path {
 }
 // More course start
 
+// Test main start
+.test-main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: start;
+    .container{
+        height: 100%;
+    }
+
+    .test-main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        height: 100%;
+
+        .test-main-link{
+            color: #FFF;
+            font-size: 11.438px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+
+            a{
+                padding-bottom: 4px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+            }
+        }
+
+        .test-main-title{
+            color: #FFF;
+            font-size: 55.234px;
+            line-height: 60px;
+            letter-spacing: -0.2px;
+            max-width: 381px;
+            margin-bottom: 21px;
+        }
+        .test-main-text{
+            color: #FFF;
+            max-width: 551px;
+            font-size: 16.602px;
+            line-height: 25px; 
+        }
+    }
+
+    .test-main-img{
+        width: 100%;
+    }
+}
+// Test main end
+
+// Test learn start
+.test-learn{
+    padding: 81px 0px 73px;
+    background-color: #FFF;
+    .container{
+        margin-left: 160px;
+    }
+    .test-learn-content{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .test-learn-title{
+            color: #000;
+            font-size: 36.516px;
+            font-weight: 700;
+            line-height: 45px;
+        }
+        .test-learn-text{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding-left: 35px;
+            p{
+                color: #000;
+                font-size: 19.195px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+// Test learn end
+
+// Test friend start
+.test-friend{
+    padding-bottom: 150px;
+    background-color: #FFF;
+    .container{
+        margin-left: 160px;
+    }
+    .test-friend-content{
+        display: flex;
+        flex-direction: column;
+        gap: 53px;
+
+        .test-friend-info{
+            display: flex;
+            flex-direction: column;
+            gap: 31px;
+            .test-friend-title{
+                color: #000;
+                font-size: 37.109px;
+                font-weight: 700;
+                line-height: 45px;
+            }
+            .test-friend-text{
+                color: #000;
+                font-size: 19.195px;
+                line-height: 30px;
+            }
+
+            .test-friend-message{
+                display: flex;
+                align-items: start;
+                gap: 15px;
+                max-width: 500px;
+                .test-message-info{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+
+                    .test-message-icons{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        .test-message-icon{
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+
+                            &:hover span{
+                                color: #000;
+                            }
+                            &:hover svg path{
+                                fill: #000;
+                            }
+                            svg{
+                                transition: .3s ease all;
+                            }
+                            span{
+                                color: #A6A6A6;
+                                font-size: 14.063px;
+                                line-height: 20px;
+                            }
+                            .test-message-comment{
+                                position: absolute;
+                                top: 2px;
+                                left: 10px;
+                            }
+                        }
+                    }
+                }
+            
+            }
+        }
+
+        .test-comment-img{
+            max-width: 416px;
+        }
+
+        .test-friend-question{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .test-friend-user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #2E2EE5;
+                font-size: 12.086px;
+                line-height: 15px;
+            }
+
+            .test-question-card{
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+                cursor: pointer;
+                padding: 20px;
+                border-radius: 8px;
+                background: linear-gradient(108deg, rgba(46, 46, 229, 0.50) 3.14%, rgba(0, 0, 0, 0.50) 50.45%, rgba(0, 0, 0, 0.50) 95.83%);
+
+                .question-card-title{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                    span{
+                        color: #000;
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+                    b{
+                        color: #000;
+                        font-size: 20.344px;
+                        font-weight: 700;
+                        line-height: 25px;
+                    }
+                }
+
+                .question-card-items{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .question-card-item{
+                        padding: 20px;
+                        border-radius: 10px;
+                        border: 1px solid #e5e5e524;
+                        text-align: start;
+                        color: #000;
+                        font-size: 16.469px;
+                        line-height: 25px;
+                    }
+                }
+            }
+
+            .test-question-link{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                color: rgba(0, 0, 0, 0.50);
+                font-size: 14.18px;
+                line-height: 25px; 
+            }
+        }
+    }
+}
+// Test friend end
+
+
+
+
+
+
+
 // Footer start
 .footer-content{
     padding: 16px 0px 20px;
@@ -993,6 +1243,30 @@ path {
                 font-size: 13px;
                 &:hover{
                     color: #FFF;
+                }
+            }
+        }
+    }
+}
+
+.panimanie-footer{
+    background-color: #FFF;
+    .footer-content{
+        border-top: 1px solid #E5E5E5;
+        .footer-top-nav{
+            .footer-nav-link{
+                color: #808080;
+
+                &:hover{
+                    color: #000;
+                }
+            }
+        }
+        .footer-bottom-text{
+            color: #808080;
+            a{
+                &:hover{
+                    color: #000;
                 }
             }
         }

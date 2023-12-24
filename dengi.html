@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <!-- Inter font -->
+    <link rel="stylesheet" href="fonts/inter/stylesheet.css">
+    <!-- Aos css -->
+    <link rel="stylesheet" href="libs/css/aos.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body  class="body">
+    
+    <div class="wrapper">
+        <!-- Header start -->
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header-content">
+                    <div class="header-nav-wrap">
+                        <a href="#!" class="header-logo"><img src="images/logo/header-logo.svg" alt=""></a>
+                        <a href="#!" class="header-nav-link">
+                            <img src="images/icons/textbook-icon.svg" alt="">
+                            Учебник
+                        </a>
+                    </div>
+
+                    <div class="header-menu">
+                        <div class="header-search-wrap">
+                            <label for="headerSearch" class="header-search-icon"><img src="images/icons/search.svg" alt=""></label>
+                            <div class="header-search-inp">
+                                <input type="search" placeholder="ПОИСК" id="headerSearch">
+                                <button class="header-search-close"><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                        </div>
+                        <div class="header-notification">
+                            <button class="header-notification-icon"><i class="fa-regular fa-bell"></i></button>
+
+                            <div class="notification-item-wrap">
+                                <div class="header-notification-item">
+                                    <div class="notification-item-icon">
+                                        <svg width="15" height="16" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.282 8.895c0-1.633.661-3.2 1.837-4.355a6.331 6.331 0 0 1 4.435-1.803A6.33 6.33 0 0 1 16.99 4.54a6.102 6.102 0 0 1 1.837 4.355v6.28a1.361 1.361 0 0 0 .697 1.246l2.37 1.3a.769.769 0 0 1 .404.684c0 .21-.086.413-.237.561a.816.816 0 0 1-.572.233H3.606a.82.82 0 0 1-.587-.247.792.792 0 0 1-.221-.588.769.769 0 0 1 .404-.684l2.383-1.259c.218-.12.398-.295.523-.507a1.35 1.35 0 0 0 .188-.697l-.014-6.322ZM12.554 0a9.145 9.145 0 0 0-6.406 2.605 8.814 8.814 0 0 0-2.653 6.29v5.473l-1.659.917a3.55 3.55 0 0 0-1.55 1.7 3.47 3.47 0 0 0-.168 2.277 3.527 3.527 0 0 0 1.286 1.901 3.64 3.64 0 0 0 2.202.732h4.07c.037.55.192 1.086.453 1.574a3.96 3.96 0 0 0 1.066 1.258A5.296 5.296 0 0 0 12.555 26a5.126 5.126 0 0 0 3.4-1.3 3.99 3.99 0 0 0 .988-1.263 3.92 3.92 0 0 0 .406-1.542h4.07a3.638 3.638 0 0 0 2.186-.738 3.527 3.527 0 0 0 1.276-1.893 3.47 3.47 0 0 0-.16-2.265 3.552 3.552 0 0 0-1.533-1.7l-1.658-.917V8.908a8.813 8.813 0 0 0-2.62-6.27A9.143 9.143 0 0 0 12.555 0Zm2.09 21.895h-4.18a.596.596 0 0 0 .097.232c.113.204.264.386.446.534a2.56 2.56 0 0 0 1.547.602c.564 0 1.107-.21 1.52-.588a1.37 1.37 0 0 0 .57-.78Z" fill="currentColor"></path></svg>
+                                    </div>
+                                    <p class="notification-item-text">У вас нет уведомлений. Пора рассказать что-то интересное</p>
+                                    <a href="#!" class="notification-item-link">Написать статью</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="header-user">
+                            <a href="#!" class="header-user-icon"><img src="images/icons/user-avatar.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header start -->
+
+        <main>
+            <!-- Main sec start -->
+            <section class="main-sec">
+                <div class="container">
+                    <div class="main-content">
+                        <img src="images/dengi-main-img.png" alt="">
+                        <div class="main-info">
+                            <div class="main-complexity">
+                                <span>СЛОЖНОСТЬ</span>
+                                <div class="main-complexity-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                        <path d="M4.68499 11.5079C4.58923 11.6251 4.52871 11.7672 4.51047 11.9175C4.49223 12.0678 4.51701 12.2202 4.58194 12.357C4.64687 12.4937 4.74929 12.6093 4.87728 12.6902C5.00527 12.771 5.15359 12.8139 5.30499 12.8139H9.77199L8.83399 18.2789C8.69499 19.0889 9.72199 19.5569 10.242 18.9209L17.936 9.50087C18.0321 9.38361 18.0928 9.24148 18.1112 9.09101C18.1296 8.94055 18.1049 8.78795 18.04 8.651C17.975 8.51404 17.8724 8.39836 17.7443 8.31743C17.6161 8.2365 17.4676 8.19365 17.316 8.19387H12.848L13.788 2.72987C13.926 1.91987 12.899 1.45187 12.379 2.08887L4.68499 11.5089V11.5079Z" fill="#D0D0D2"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                        <path d="M4.68499 11.5079C4.58923 11.6251 4.52871 11.7672 4.51047 11.9175C4.49223 12.0678 4.51701 12.2202 4.58194 12.357C4.64687 12.4937 4.74929 12.6093 4.87728 12.6902C5.00527 12.771 5.15359 12.8139 5.30499 12.8139H9.77199L8.83399 18.2789C8.69499 19.0889 9.72199 19.5569 10.242 18.9209L17.936 9.50087C18.0321 9.38361 18.0928 9.24148 18.1112 9.09101C18.1296 8.94055 18.1049 8.78795 18.04 8.651C17.975 8.51404 17.8724 8.39836 17.7443 8.31743C17.6161 8.2365 17.4676 8.19365 17.316 8.19387H12.848L13.788 2.72987C13.926 1.91987 12.899 1.45187 12.379 2.08887L4.68499 11.5089V11.5079Z" fill="white" fill-opacity="0.3"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                        <path d="M4.68499 11.5079C4.58923 11.6251 4.52871 11.7672 4.51047 11.9175C4.49223 12.0678 4.51701 12.2202 4.58194 12.357C4.64687 12.4937 4.74929 12.6093 4.87728 12.6902C5.00527 12.771 5.15359 12.8139 5.30499 12.8139H9.77199L8.83399 18.2789C8.69499 19.0889 9.72199 19.5569 10.242 18.9209L17.936 9.50087C18.0321 9.38361 18.0928 9.24148 18.1112 9.09101C18.1296 8.94055 18.1049 8.78795 18.04 8.651C17.975 8.51404 17.8724 8.39836 17.7443 8.31743C17.6161 8.2365 17.4676 8.19365 17.316 8.19387H12.848L13.788 2.72987C13.926 1.91987 12.899 1.45187 12.379 2.08887L4.68499 11.5089V11.5079Z" fill="white" fill-opacity="0.3"/>
+                                    </svg>    
+                                </div>
+                            </div>
+                            <h1 class="main-info-title">Как говорить с детьми про деньги</h1>
+                            <p class="main-info-text">Бесплатный курс о том, как научить ребенка ценить деньги и вещи, разумно тратить и копить на большие цели</p>
+                            <a href="#!" class="main-info-link">Учиться бесплатно</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Main sec end -->
+
+            <!-- Financial start -->
+            <section class="financial">
+                <div class="container">
+                    <div class="financial-content">
+                        <div class="financial-info">
+                            <h2 class="financial-title sec-title">Дети обожают покупать и тратить. Но им трудно понять, почему вы не хотите купить все игрушки в магазине, а ваш кошелек не банкомат</h2>
+                            <p class="financial-text">Детям нужно многое объяснять и показывать. И чем раньше начнете, тем больше шансов вырастить самостоятельного ребенка, который умеет управлять деньгами и готов к трудностям взрослой жизни.</p>
+                            <p class="financial-text">Ребенку предстоит узнать так много всего — и наш курс поможет вам стать проводником к этим знаниям. В итоге вы сможете объяснить, как научиться зарабатывать и ценить свой труд, пользоваться кредиткой и не влезать в долги, копить и вкладываться в действительно важные вещи.</p>
+                        </div>
+                        <div class="financial-imgs">
+                            <img src="images/dengi-financial-img1.png" alt="" class="financial-img financial-img1">
+                            <img src="images/dengi-financial-img2.png" alt="" class="financial-img financial-img2">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Financial end -->
+
+            <!-- Course start -->
+            <section class="course">
+                <div class="container">
+                    <div class="course-content">
+                        <div class="course-info">
+                            <h2 class="course-title sec-title">Программа курса</h2>
+                            <p class="course-text">
+                                6 простых уроков, которые помогут вам стать финансовым наставником для детей, даже если вы сами не гуру финансовой грамотности. Разберемся, стоит ли платить за уборку
+                                и оценки, как объяснить ребенку, что нужно ценить вещи и деньги, как научить его отличать потребности от сиюминутных желаний, копить и грамотно тратить. Вы сможете дать ребенку больше самостоятельности и ответственности, доверить деньги и не переживать — ни за него, ни за себя.
+                            </p>
+                        </div>
+
+                        <div class="course-cards">
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/dengi-course-img1.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>1 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">от 30 минут чтения</span>
+                                                    <span class="course-card-time">от 5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Проверяем, что ребенок уже знает</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Что влияет на финансовое развитие детей</p>
+                                            <p>Как развиваются отношения с деньгами в разном возрасте</p>
+                                            <p>Как проследить за финансовым поведением ребенка</p>
+                                            <p>Как составить финансовый портрет ребенка</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/dengi-course-img2.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>2 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">от 30 минут чтения</span>
+                                                    <span class="course-card-time">от 5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Развиваем полезные финансовые навыки</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Какие есть базовые финансовые навыки</p>
+                                            <p>Как развивать финансовые навыки в разном возрасте</p>
+                                            <p>Как тренировать умение говорить с ребенком о деньгах</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/dengi-course-img3.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>3 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">от 30 минут чтения</span>
+                                                    <span class="course-card-time">от 10 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Даем домашние поручения</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Как домашние дела влияют на финансовое развитие ребенка</p>
+                                            <p>Как установить правила домохозяйства</p>
+                                            <p>Как рассказать ребенку о покупке продуктов, ЖКХ, уборке и поломках</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/dengi-course-img4.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>4 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">от 25 минут чтения</span>
+                                                    <span class="course-card-time">от 5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Учим ребенка тратить и копить</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Что такое карманные деньги и личный бюджет ребенка</p>
+                                            <p>Как научить ребенка анализировать доходы и расходы</p>
+                                            <p>Как установить финансовые правила</p>
+                                            <p>Стоит ли платить за оценки</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/dengi-course-img5.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>5 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">от 35 минут чтения</span>
+                                                    <span class="course-card-time">от 20 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Используем книги, игры и мультики</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Какие бывают полезные для финансового развития книги</p>
+                                            <p>Какие мультики и фильмы стоит посмотреть с ребенком</p>
+                                            <p>Как выбрать компьютерные и настольные игры, которые принесут пользу и понравятся детям</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/dengi-course-img6.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>6 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">от 20 минут чтения</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Разбираем ошибки и частые проблемы</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Что делать, если ребенок не ценит вещи и вечно требует что-то купить</p>
+                                            <p>Как рассказать детям про экономическое неравенство и объяснить, что у семьи трудные времена</p>
+                                            <p>Как объяснить родственникам семейные финансовые правила</p>
+                                            <p>Как научить ребенка не воровать и не жадничать</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/dengi-course-img7.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>Экзамен</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Помогите Маше и Саше научиться говорить о деньгах с детьми</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>10 вопросов и диплом</p></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="course-diplom">
+                           <img src="images/ponimanie-diplom.png" alt="" class="diplom-img diplom-img1">
+                           <img src="images/ponimanie-diplom-mob.png" alt="" class="diplom-img diplom-img2">
+                        </div>
+
+                        <div class="course-suitable">
+                            <div class="course-suitable-info">
+                                <h2 class="course-suitable-title sec-title">Кому подойдет курс</h2>
+                            </div>
+                            <div class="course__suitable-boxs">
+                                <div class="course__suitable-box">
+                                    <img src="images/dengi-suitable-icon1.svg" alt="">
+                                    <p>Всем, кто хочет начать разговор о деньгах с детьми от 2 до 18 лет. Большая часть информации в уроках касается детей от 6 до 14 лет, потому что именно в этом возрасте формируются отношения с деньгами</p>
+                                </div>
+                                <div class="course__suitable-box">
+                                    <img src="images/dengi-suitable-icon2.svg" alt="">
+                                    <p>Всем, кто хочет научить детей финансовой грамотности в игровой форме и без скучных советов</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-suitable">
+                            <div class="course-suitable-info">
+                                <h2 class="course-suitable-title sec-title">Кому не подойдет курс</h2>
+                            </div>
+                            <div class="course__suitable-boxs">
+                                <div class="course__suitable-box">
+                                    <img src="images/dengi-suitable-icon3.svg" alt="">
+                                    <p>
+                                        Тем, у кого нет детей, курс вряд ли покажется интересным. Но проходить его могут не только родители. Если у вас есть братья,
+                                        сестры, племянники или внуки и вы хотите помочь им стать финансово грамотными людьми — вам этот курс тоже подходит
+                                    </p>
+                                </div>
+                                <div class="course__suitable-box">
+                                    <img src="images/dengi-suitable-icon4.svg" alt="">
+                                    <p>Тем, кто хочет, чтобы ребенок всему учился сам, без помощи и участия взрослого</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-suitable-imgs">
+                            <h2 class="suitable-imgs-title sec-title">Короткие текстовые уроки, понятный язык</h2>
+                            <img src="images/dengi-suitable-img1.png" alt="" class="course-suitable-img course-suitable-img1">
+                            <img src="images/dengi-suitable-img2.png" alt="" class="course-suitable-img course-suitable-img2">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Course end -->
+
+            <!-- Practice start -->
+            <section class="practice" data-scene>
+                <div class="container">
+                    <div class="practice-content">
+                        <div class="practice-info">
+                            <h1 class="practice-title sec-title">Примеры из жизни, игры, шаблоны и схемы — все, чтобы начать разговор с детьми уже сегодня</h1>
+                        </div>
+
+                        <div class="practice-imgs">
+                            <img src="images/dengi-practice-img1.png" alt="" class="practice-img" data-aos="fade-up" data-aos-delay="400">
+                            <img src="images/dengi-practice-img2.png" alt="" class="practice-img" data-aos="fade-up" data-aos-delay="400">
+                            <img src="images/dengi-practice-img3.png" alt="" class="practice-img" data-aos="fade-up" data-aos-delay="400">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Practice end -->
+
+            <!-- Experts start -->
+            <section class="experts">
+                <div class="container">
+                    <div class="experts-content">
+                        <h2 class="experts-title sec-title">Авторы и эксперты</h2>
+                        <div class="experts-items">
+                            <div class="experts-item">
+                                <img src="images/experts-item-img10.svg" alt="" class="experts-item-img">
+                                <div class="experts-item-info">
+                                    <div class="experts-item-title">
+                                        <a href="#!">Анна Деньгина</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M6.08859 2.48535C5.42585 2.48433 4.88776 3.02076 4.88674 3.68351C4.88572 4.34625 5.42215 4.88433 6.0849 4.88535L9.18106 4.89012L3.16348 10.9077C2.69485 11.3763 2.69485 12.1361 3.16348 12.6048C3.63211 13.0734 4.39191 13.0734 4.86054 12.6048L10.8786 6.58664L10.8834 9.68366C10.8844 10.3464 11.4225 10.8828 12.0852 10.8819C12.7479 10.8808 13.2844 10.3428 13.2834 9.68L13.2743 3.69274C13.2732 3.03143 12.7374 2.49559 12.0761 2.49457L6.08859 2.48535Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <p class="experts-item-text">Финансовый педагог и тьютор, эксперт Национального центра финансовой грамотности, основательница проекта «Деньгин’s», занимается финансовым просвещением с 2007 года: разрабатывает и проводит курсы и программы наставничества, помогает взрослым и детям грамотно управлять деньгами. Мама двоих детей</p>
+                                </div>
+                            </div>
+                            <div class="experts-item">
+                                <img src="images/experts-item-img11.svg" alt="" class="experts-item-img">
+                                <div class="experts-item-info">
+                                    <div class="experts-item-title">
+                                        <a href="#!">Александр Покрышкин</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M6.08859 2.48535C5.42585 2.48433 4.88776 3.02076 4.88674 3.68351C4.88572 4.34625 5.42215 4.88433 6.0849 4.88535L9.18106 4.89012L3.16348 10.9077C2.69485 11.3763 2.69485 12.1361 3.16348 12.6048C3.63211 13.0734 4.39191 13.0734 4.86054 12.6048L10.8786 6.58664L10.8834 9.68366C10.8844 10.3464 11.4225 10.8828 12.0852 10.8819C12.7479 10.8808 13.2844 10.3428 13.2834 9.68L13.2743 3.69274C13.2732 3.03143 12.7374 2.49559 12.0761 2.49457L6.08859 2.48535Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <p class="experts-item-text">Лектор, детский психолог и игровой терапевт, основатель сообщества Play Therapy Russia, организатор первой в России международной программы обучения игровой терапии</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Experts end -->
+
+            <!-- Review start -->
+            <section class="review">
+                <div class="container">
+                    <div class="review-content">
+                        <h2 class="review-title sec-title">1 отзыв студента</h2>
+
+                        <div class="review-progress">
+                            <div class="review__progress-num">
+                                <b>5.0</b>
+                                <span>из 5</span>
+                            </div>
+
+                            <div class="review__progress-bar">
+                                <div class="review__progress-item dengi__progress-item">
+                                    <div class="review__progress-star">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                    </div>
+                                    <div class="review__progress-line review__progress-line1"></div>
+                                </div>
+                                <div class="review__progress-item dengi__progress-item">
+                                    <div class="review__progress-star">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                    </div>
+                                    <div class="review__progress-line review__progress-line2"></div>
+                                </div>
+                                <div class="review__progress-item">
+                                    <div class="review__progress-star">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                    </div>
+                                    <div class="review__progress-line review__progress-line3"></div>
+                                </div>
+                                <div class="review__progress-item">
+                                    <div class="review__progress-star">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                    </div>
+                                    <div class="review__progress-line review__progress-line4"></div>
+                                </div>
+                                <div class="review__progress-item">
+                                    <div class="review__progress-star">
+                                        <img src="images/icons/smal-star.svg" alt="">
+                                    </div>
+                                    <div class="review__progress-line review__progress-line5"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-comment">
+                            <a href="#!" class="review__comment-item">
+                                <div class="review__comment-star">
+                                    <img src="images/icons/big-star.svg" alt="">
+                                    <img src="images/icons/big-star.svg" alt="">
+                                    <img src="images/icons/big-star.svg" alt="">
+                                    <img src="images/icons/big-star.svg" alt="">
+                                    <img src="images/icons/big-star.svg" alt="">
+                                </div>
+
+                                <div class="review__comment-text">
+                                    <p>
+                                        Мне очень понравился курс, он оправдал все ожидания. Я советую его семьям с детьми. Недавно подруга спрашивала меня о финансовой грамотности,
+                                        и я посоветовала ей начать именно с детского курса, так как он очень легкий, интересный и плавно подводит ко взрослой финансовой грамотности.
+                                    </p>
+                                    <p>
+                                        Мне понравилось подача материала и структурированность уроков. Очень удобный формат, есть проверка знаний. Упорядоченная информации. Самое главное, что можно не просто прочитать текст и забыть, а сделать практические задания 
+                                        <img src="images/icons/text-dot.svg" alt="">
+                                    </p>
+                                </div>
+
+                                <div class="review__comment-info">
+                                    <img src="images/review-item-avatar7.svg" alt="">
+                                    <div class="review__comment-name">
+                                        <b>Анастасия</b>
+                                        <span>2 марта</span>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <div class="review-comment-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                                    <g clip-path="url(#clip0_9_2389)">
+                                    <path d="M15 30.7236C23.2843 30.7236 30 24.0079 30 15.7236C30 7.43936 23.2843 0.723633 15 0.723633C6.71573 0.723633 0 7.43936 0 15.7236C0 24.0079 6.71573 30.7236 15 30.7236Z" fill="black"/>
+                                    <path d="M22.8805 15.8266C22.8377 15.7982 22.7886 15.781 22.7374 15.7764C22.6863 15.7718 22.6349 15.78 22.5877 15.8002L9.57611 21.2074C9.51925 21.2311 9.47068 21.271 9.43651 21.3223C9.40234 21.3736 9.38411 21.4338 9.38411 21.4954V24.8122C9.38436 24.8632 9.3971 24.9134 9.4212 24.9585C9.4453 25.0035 9.48005 25.0419 9.5224 25.0704C9.56476 25.0989 9.61344 25.1167 9.66421 25.1221C9.71499 25.1274 9.76631 25.1203 9.81371 25.1014L22.8277 19.6942C22.8846 19.6705 22.9331 19.6305 22.9673 19.5792C23.0015 19.528 23.0197 19.4678 23.0197 19.4062V16.0894C23.0203 16.0374 23.008 15.9861 22.984 15.94C22.9599 15.8939 22.9247 15.8545 22.8817 15.8254L22.8805 15.8266ZM22.8265 11.4154L9.81251 6.05617C9.76429 6.03661 9.71196 6.02937 9.66024 6.03512C9.60852 6.04086 9.55905 6.05939 9.51629 6.08905C9.47353 6.1187 9.43884 6.15855 9.41534 6.20497C9.39185 6.2514 9.38029 6.30295 9.38171 6.35497V9.65137C9.3818 9.7128 9.40024 9.77281 9.43467 9.82369C9.46909 9.87457 9.51792 9.91402 9.57491 9.93697L16.9309 12.9298C16.9946 12.9561 17.0492 13.0006 17.0876 13.0579C17.126 13.1151 17.1467 13.1824 17.1469 13.2514C17.1472 13.3204 17.1267 13.388 17.0882 13.4453C17.0497 13.5026 16.9949 13.5471 16.9309 13.573L9.57491 16.5658C9.51843 16.5893 9.47011 16.6289 9.43597 16.6797C9.40183 16.7305 9.38338 16.7902 9.38291 16.8514V20.125C9.38097 20.1772 9.39217 20.2291 9.4155 20.2758C9.43882 20.3226 9.47351 20.3627 9.5164 20.3926C9.55928 20.4225 9.60897 20.4411 9.66092 20.4467C9.71287 20.4524 9.76541 20.4449 9.81371 20.425L22.8265 15.0694C22.8832 15.0458 22.9316 15.0059 22.9658 14.9549C22.9999 14.9039 23.0183 14.844 23.0185 14.7826V11.6986C23.0185 11.6373 23.0002 11.5774 22.9661 11.5265C22.9319 11.4756 22.8833 11.4361 22.8265 11.413V11.4154Z" fill="#B9E0FD"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_9_2389">
+                                    <rect width="30" height="30" fill="white" transform="translate(0 0.723633)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <a href="#!">Еще 103 отзыва в Сравняторе</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Review end -->
+
+            <!-- Course app start -->
+            <section class="course-app">
+                <div class="container">
+                    <div class="course-answer">
+                        <h2 class="course-answer-title sec-title">Ответы на частые вопросы</h2>
+                        <div class="course-answer-items">
+                            <div class="course-answer-item">
+                                <span>В каком формате проходит обучение?</span>
+                                <p class="course-answer-text">
+                                    Каждый урок — это лонгрид с иллюстрациями, примерами, фотографиями, схемами
+                                    и заданиями. Некоторые задания можно выполнить прямо в уроках, а для других
+                                    понадобятся дополнительные программы или ручка и лист бумаги. А иногда в конце уроков
+                                    бывает тест для закрепления пройденного материала.
+                                </p>
+                            </div>
+                            <div class="course-answer-item">
+                                <span>Уроки выходят сразу или по отдельности?</span>
+                                <p class="course-answer-text">
+                                    Обычно мы публикуем уроки постепенно. Даты выхода уроков — в списке уроков, выше
+                                    на этой странице. Если дат нет, значит, все уроки уже вышли и можно пройти курс целиком.
+                                </p>
+                            </div>
+                            <div class="course-answer-item">
+                                <span>Сколько длится курс?</span>
+                                <p class="course-answer-text">У курсов нет ограничений по времени: они в текстовом формате, поэтому проходить их можно в удобном темпе.</p>
+                            </div>
+                            <div class="course-answer-item">
+                                <span>Можно пройти курс повторно?</span>
+                                <p class="course-answer-text">Да, курс можно проходить сколько угодно раз, все материалы останутся у вас.</p>
+                            </div>
+                            <div class="course-answer-item">
+                                <span>Я смогу задать вопросы автору курса?</span>
+                                <p class="course-answer-text">Если возникнут вопросы по теме урока — пишите нам: передадим их авторам курса и постараемся найти ответ.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-write">
+                        <h2 class="course-write-title sec-title">Напишите нам</h2>
+                        <p class="course-write-text">Если у вас есть вопросы — пишите <a href="mailto:uchebnik@tinkoffjournal.ru">на uchebnik@tinkoffjournal.ru</a>.  Мы читаем все письма и постараемся ответить вам как можно быстрее.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Course app end -->
+
+            <!-- Course team start -->
+            <section class="course-team">
+                <div class="container">
+                    <h2 class="course-team-title sec-title">Команда курса</h2>
+                    <div class="course-team-content">
+                        <div class="course-team-items">
+                            <div class="course-team-item">
+                                <span class="team-item-name">Спроектировали</span>
+                                <div class="course-team-box">
+                                    <img src="images/team-person24.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Анна Деньгина</span>
+                                        <p class="team-person-job">методолог</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person1.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Женя Захаркова</span>
+                                        <p class="team-person-job">дизайнер обучения</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person25.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Настя Круглова</span>
+                                        <p class="team-person-job">менеджер продукта</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-team-item">
+                                <span class="team-item-name">Отредактировали</span>
+                                <div class="course-team-box">
+                                    <img src="images/team-person26.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Лера Варпаева</span>
+                                        <p class="team-person-job">редактор</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person27.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Артем Рыжков</span>
+                                        <p class="team-person-job">редактор</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person4.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Андрей Абрамов</span>
+                                        <p class="team-person-job">редактор</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person5.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Никита Юкович</span>
+                                        <p class="team-person-job">шеф-редактор</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person6.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Андрей Иванов</span>
+                                        <p class="team-person-job">выпускающий редактор</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person28.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Полина Корягина</span>
+                                        <p class="team-person-job">корректор</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person29.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Катя Лебедева</span>
+                                        <p class="team-person-job">корректор</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-team-items">
+                            <div class="course-team-item">
+                                <span class="team-item-name">Оформили</span>
+                                <div class="course-team-box">
+                                    <img src="images/team-person11.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Карина Левшова</span>
+                                        <p class="team-person-job">дизайнерка</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person10.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Вика Бойко</span>
+                                        <p class="team-person-job">ведущая дизайнерка</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person30.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Витя Чиллмэн</span>
+                                        <p class="team-person-job">иллюстраторка</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person13.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Аня Лысяк</span>
+                                        <p class="team-person-job">фоторедакторка</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person12.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Катя Молчанова</span>
+                                        <p class="team-person-job">арт-директриса</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person14.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Вячеслав Хохлов</span>
+                                        <p class="team-person-job">верстальщик</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person15.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Виктор Корепанов</span>
+                                        <p class="team-person-job">верстальщик</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="course-team-item">
+                                <span class="team-item-name">Организовали</span>
+                                <div class="course-team-box">
+                                    <img src="images/team-person16.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Вика Комарова</span>
+                                        <p class="team-person-job">продюсер</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person31.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Ася Терехова</span>
+                                        <p class="team-person-job">менеджерка проекта</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person18.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Катя Летова</span>
+                                        <p class="team-person-job">руководитель проекта</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Course team end -->
+
+            <!-- More course start -->
+            <section class="more-course">
+                <div class="container">
+                    <div class="more__course-content">
+                        <h2 class="more-course-title sec-title">Еще курсы</h2>
+
+                        <div class="more__course-items">
+                            <a href="#!" class="more__course-item">
+                                <img src="images/more-course-img2.png" alt="">
+                                <div class="more__course-info">
+                                    <b>А как инвестировать: курс для начинающих</b>
+                                    <span>9 уроков по 10–15 минут + бонусный урок</span>
+                                </div>
+                            </a>
+                            <a href="#!" class="more__course-item">
+                                <img src="images/more-course-img9.png" alt="">
+                                <div class="more__course-info">
+                                    <b>Как управлять личными финансами</b>
+                                    <span>10 уроков по 25–35 минут</span>
+                                </div>
+                            </a>
+                            <a href="#!" class="more__course-item">
+                                <img src="images/more-course-img10.png" alt="">
+                                <div class="more__course-info">
+                                    <b>Кому и зачем становиться самозанятым</b>
+                                    <span>5 уроков по 10–12 минут</span>
+                                </div>
+                            </a>
+                            <a href="#!" class="more__course-item">
+                                <img src="images/more-course-img3.png" alt="">
+                                <div class="more__course-info">
+                                    <b>Как защититься от мошенников</b>
+                                    <span>9 уроков по 15–30 минут</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <a href="#!" class="more__course-link">Смотреть все <img src="images/icons/right-arrow.svg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+            <!-- More course end -->
+
+        </main>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="footer-content">
+                    <div class="footer-top">
+                        <div class="footer-socicial">
+                            <a href="#!" class="footer-socicial-link"><img src="images/icons/telegram.svg" alt=""></a>
+                            <a href="#!" class="footer-socicial-link"><img src="images/icons/wk.svg" alt=""></a>
+                        </div>
+
+                        <div class="footer-top-nav">
+                            <a href="#!" class="footer-nav-link">Об Учебнике</a>
+                            <a href="#!" class="footer-nav-link">Контакты</a>
+                            <a href="#!" class="footer-nav-link">Курсы для компаний</a>
+                            <a href="#!" class="footer-nav-link">Юридическая информация</a>
+                            <a href="#!" class="footer-nav-link">Сообщить о проблеме</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <img src="images/icons/footer-logo.svg" alt="">
+                        <p class="footer-bottom-text">АО «Тинькофф Банк» лицензия №2673 2023 <a href="mailto:uchebnik@tinkoffjournal.ru">uchebnik@tinkoffjournal.ru</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Aos js cdn link -->
+    <script src="libs/js/aos.js"></script>
+    <!-- Script js -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

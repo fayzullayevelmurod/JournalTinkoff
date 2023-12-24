@@ -1,4 +1,29 @@
 
+@media only screen and (max-width: 1020px) {
+    // Test main media
+    .test-main{
+        grid-template-columns: 100%;
+        .test-main-content{
+            padding: 7px 0px 34px;
+        }
+    }
+    
+    // Test learn media
+    .test-learn{
+        .container{
+            margin-left: auto;
+        }
+    }
+
+    // Test friend  media
+    .test-friend{
+        .container{
+            margin-left: auto;
+        }
+    }
+}
+
+
 @media only screen and (max-width: 620px) {
 
     .container-fluid{
@@ -225,6 +250,72 @@
             }
         }
     }
+
+    // Test main media
+    .test-main {
+        .test-main-content {
+            .test-main-title{
+                font-size: 29.531px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    // Test learn media 
+    .test-learn {
+        .test-learn-content {
+            gap: 23px;
+            .test-learn-title{
+                font-size: 26.906px;
+                line-height: 30px;
+            }
+            .test-learn-text{
+                padding-left: 25px;
+                p{
+                    font-size: 15.539px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+    // Test friend
+    .test-friend{
+        .test-friend-content{
+            gap: 33px;
+            .test-friend-info{
+                gap: 20px;
+                .test-friend-title{
+                    font-size: 27.344px;
+                    line-height: 30px;
+                }
+                .test-friend-text{
+                    font-size: 16.336px;
+                    line-height: 25px;
+                }
+            }
+            .test-friend-question{
+                .test-question-card{
+                    .question-card-title{
+                        span{
+                            font-size: 13px;
+                            line-height: 15px;
+                        }
+                        b{
+                            font-size: 16.469px;
+                            line-height: 20px; 
+                        }
+                    }
+                    .question-card-items{
+                        .question-card-item{
+                            padding: 19px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 
     // Footer media 
     .footer{
