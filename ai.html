@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <!-- Inter font -->
+    <link rel="stylesheet" href="fonts/inter/stylesheet.css">
+    <!-- Aos css -->
+    <link rel="stylesheet" href="libs/css/aos.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Style css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="body">
+
+    <div class="wrapper">
+        <!-- Header start -->
+        <header class="header">
+            <div class="container-fluid">
+                <div class="header-content">
+                    <div class="header-nav-wrap">
+                        <a href="#!" class="header-logo"><img src="images/logo/header-logo.svg" alt=""></a>
+                        <a href="#!" class="header-nav-link">
+                            <img src="images/icons/textbook-icon.svg" alt="">
+                            Учебник
+                        </a>
+                    </div>
+
+                    <div class="header-menu">
+                        <div class="header-search-wrap">
+                            <label for="headerSearch" class="header-search-icon"><img src="images/icons/search.svg"
+                                    alt=""></label>
+                            <div class="header-search-inp">
+                                <input type="search" placeholder="ПОИСК" id="headerSearch">
+                                <button class="header-search-close"><i class="fa-solid fa-xmark"></i></button>
+                            </div>
+                        </div>
+                        <div class="header-notification">
+                            <button class="header-notification-icon"><i class="fa-regular fa-bell"></i></button>
+
+                            <div class="notification-item-wrap">
+                                <div class="header-notification-item">
+                                    <div class="notification-item-icon">
+                                        <svg width="15" height="16" viewBox="0 0 25 26" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M6.282 8.895c0-1.633.661-3.2 1.837-4.355a6.331 6.331 0 0 1 4.435-1.803A6.33 6.33 0 0 1 16.99 4.54a6.102 6.102 0 0 1 1.837 4.355v6.28a1.361 1.361 0 0 0 .697 1.246l2.37 1.3a.769.769 0 0 1 .404.684c0 .21-.086.413-.237.561a.816.816 0 0 1-.572.233H3.606a.82.82 0 0 1-.587-.247.792.792 0 0 1-.221-.588.769.769 0 0 1 .404-.684l2.383-1.259c.218-.12.398-.295.523-.507a1.35 1.35 0 0 0 .188-.697l-.014-6.322ZM12.554 0a9.145 9.145 0 0 0-6.406 2.605 8.814 8.814 0 0 0-2.653 6.29v5.473l-1.659.917a3.55 3.55 0 0 0-1.55 1.7 3.47 3.47 0 0 0-.168 2.277 3.527 3.527 0 0 0 1.286 1.901 3.64 3.64 0 0 0 2.202.732h4.07c.037.55.192 1.086.453 1.574a3.96 3.96 0 0 0 1.066 1.258A5.296 5.296 0 0 0 12.555 26a5.126 5.126 0 0 0 3.4-1.3 3.99 3.99 0 0 0 .988-1.263 3.92 3.92 0 0 0 .406-1.542h4.07a3.638 3.638 0 0 0 2.186-.738 3.527 3.527 0 0 0 1.276-1.893 3.47 3.47 0 0 0-.16-2.265 3.552 3.552 0 0 0-1.533-1.7l-1.658-.917V8.908a8.813 8.813 0 0 0-2.62-6.27A9.143 9.143 0 0 0 12.555 0Zm2.09 21.895h-4.18a.596.596 0 0 0 .097.232c.113.204.264.386.446.534a2.56 2.56 0 0 0 1.547.602c.564 0 1.107-.21 1.52-.588a1.37 1.37 0 0 0 .57-.78Z"
+                                                fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="notification-item-text">У вас нет уведомлений. Пора рассказать что-то
+                                        интересное</p>
+                                    <a href="#!" class="notification-item-link">Написать статью</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="header-user">
+                            <a href="#!" class="header-user-icon"><img src="images/icons/user-avatar.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header start -->
+
+        <main>
+            <!-- Main sec start -->
+            <section class="main-sec">
+                <div class="container">
+                    <div class="main-content">
+                        <img src="images/ai-main-img.png" alt="">
+                        <div class="main-info">
+                            <div class="main-complexity">
+                                <span>СЛОЖНОСТЬ</span>
+                                <div class="main-complexity-icons">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                                        fill="none">
+                                        <path
+                                            d="M4.68499 11.5079C4.58923 11.6251 4.52871 11.7672 4.51047 11.9175C4.49223 12.0678 4.51701 12.2202 4.58194 12.357C4.64687 12.4937 4.74929 12.6093 4.87728 12.6902C5.00527 12.771 5.15359 12.8139 5.30499 12.8139H9.77199L8.83399 18.2789C8.69499 19.0889 9.72199 19.5569 10.242 18.9209L17.936 9.50087C18.0321 9.38361 18.0928 9.24148 18.1112 9.09101C18.1296 8.94055 18.1049 8.78795 18.04 8.651C17.975 8.51404 17.8724 8.39836 17.7443 8.31743C17.6161 8.2365 17.4676 8.19365 17.316 8.19387H12.848L13.788 2.72987C13.926 1.91987 12.899 1.45187 12.379 2.08887L4.68499 11.5089V11.5079Z"
+                                            fill="#D0D0D2" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                                        fill="none">
+                                        <path
+                                            d="M4.68499 11.5079C4.58923 11.6251 4.52871 11.7672 4.51047 11.9175C4.49223 12.0678 4.51701 12.2202 4.58194 12.357C4.64687 12.4937 4.74929 12.6093 4.87728 12.6902C5.00527 12.771 5.15359 12.8139 5.30499 12.8139H9.77199L8.83399 18.2789C8.69499 19.0889 9.72199 19.5569 10.242 18.9209L17.936 9.50087C18.0321 9.38361 18.0928 9.24148 18.1112 9.09101C18.1296 8.94055 18.1049 8.78795 18.04 8.651C17.975 8.51404 17.8724 8.39836 17.7443 8.31743C17.6161 8.2365 17.4676 8.19365 17.316 8.19387H12.848L13.788 2.72987C13.926 1.91987 12.899 1.45187 12.379 2.08887L4.68499 11.5089V11.5079Z"
+                                            fill="white" fill-opacity="0.3" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                                        fill="none">
+                                        <path
+                                            d="M4.68499 11.5079C4.58923 11.6251 4.52871 11.7672 4.51047 11.9175C4.49223 12.0678 4.51701 12.2202 4.58194 12.357C4.64687 12.4937 4.74929 12.6093 4.87728 12.6902C5.00527 12.771 5.15359 12.8139 5.30499 12.8139H9.77199L8.83399 18.2789C8.69499 19.0889 9.72199 19.5569 10.242 18.9209L17.936 9.50087C18.0321 9.38361 18.0928 9.24148 18.1112 9.09101C18.1296 8.94055 18.1049 8.78795 18.04 8.651C17.975 8.51404 17.8724 8.39836 17.7443 8.31743C17.6161 8.2365 17.4676 8.19365 17.316 8.19387H12.848L13.788 2.72987C13.926 1.91987 12.899 1.45187 12.379 2.08887L4.68499 11.5089V11.5079Z"
+                                            fill="white" fill-opacity="0.3" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <h1 class="main-info-title">Как упростить жизнь с помощью нейросетей</h1>
+                            <p class="main-info-text">Бесплатный курс о том, как превратить нейросети в помощника
+                                на работе, в учебе и в быту</p>
+                            <a href="#!" class="main-info-link">Учиться бесплатно</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Main sec end -->
+
+            <!-- Financial start -->
+            <section class="financial">
+                <div class="container">
+                    <div class="financial-content">
+                        <div class="financial-info">
+                            <h2 class="financial-title sec-title">Иногда просишь собеседника о чем-то важном, все
+                                объясняешь, а он не слышит — не понимает</h2>
+                            <p class="financial-text">Кажется, все вокруг используют нейросети: пишут посты и ищут
+                                информацию, выкладывают сгенерированные картинки и смешные диалоги. А если
+                                не используют, то переживают, что скоро их заменят роботы.</p>
+                            <p class="financial-text">Курс поможет разобраться, что же такое нейросети и как передать
+                                им часть своих задач, чтобы превратить искусственный интеллект в помощника и упростить
+                                свою жизнь. Мы научим вас пользоваться самыми популярными нейросетями — ChatGPT
+                                и Midjourney. Вы поймете, откуда весь шум, попробуете нейросети в деле и решите, где они
+                                могут пригодиться.</p>
+                        </div>
+                        <div class="financial-imgs">
+                            <img src="images/ai-financial-img1.png" alt="" class="financial-img financial-img1">
+                            <img src="images/ai-financial-img2.png" alt="" class="financial-img financial-img2">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Financial end -->
+
+            <!-- Course start -->
+            <section class="course">
+                <div class="container">
+                    <div class="course-content">
+                        <div class="course-info">
+                            <h2 class="course-title sec-title">Программа курса</h2>
+                            <p class="course-text">За десять текстовых уроков вы узнаете, как пользоваться нейросетями.
+                                Для этого научим составлять идеальный запрос, чтобы решать свои задачи
+                                и не разочаровываться. Дадим шаблоны команд и расскажем обо всех лайфхаках
+                                и ограничениях. А еще покажем реальные ответы и результаты работы нейросетей — все идеи
+                                проверены на практике.</p>
+                            <p class="course-text">Курс написали авторы техноредакции Т—Ж. Они много лет изучают медиа,
+                                интернет и технологии и выпускают одни из самых подробных статей о нейросетях в рунете.
+                            </p>
+                        </div>
+
+                        <div class="course-cards">
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img1.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>Введение</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">5—8 минут чтения</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Что такое нейросети</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Где используют нейросети и как они работают</p>
+                                            <p>Почему нейросети стали популярны только в 2022 году</p>
+                                            <p>Что они могут прямо сейчас</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img2.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>1 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">15—20 минут чтения</span>
+                                                    <span class="course-card-time">3—5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Пишем идеальный запрос для ChatGPT</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Как получить доступ к ChatGPT и подготовиться к работе</p>
+                                            <p>Как составить идеальный запрос для ChatGPT</p>
+                                            <p>Какие лайфхаки помогут при общении с нейросетью</p>
+                                            <p>О каких ограничениях ChatGPT важно знать</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img3.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>2 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">10—15 минут чтения</span>
+                                                    <span class="course-card-time">3—5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Упрощаем быт c ChatGPT. Теория</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Какие бытовые задачи может решить ChatGPT</p>
+                                            <p>Какие плагины пригодятся для решения повседневных задач</p>
+                                            <p>Как создавать планы, списки, таблицы и чек-листы</p>
+                                            <p>Как превратить ChatGPT в личного помощника</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img4.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>3 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">15—20 минут чтения</span>
+                                                    <span class="course-card-time">3—5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Упрощаем быт с ChatGPT. Практика</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Как генерировать рецепты и составлять план питания</p>
+                                            <p>Как превратить ChatGPT в повара-наставника</p>
+                                            <p>Как использовать ChatGPT для повышения финансовой грамотности</p>
+                                            <p>Какие советы по управлению личными финансами стоит просить у нейросети
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img5.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>4 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">10—15 минут чтения</span>
+                                                    <span class="course-card-time">3—5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Пишем тексты с ChatGPT</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Какие тексты лучше вообще не генерировать в ChatGPT</p>
+                                            <p>О каких ограничениях при работе с текстом важно знать</p>
+                                            <p>Как создавать тексты с нейросетью</p>
+                                            <p>Как редактировать тексты с ChatGPT</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img6.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>5 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">10—15 минут чтения</span>
+                                                    <span class="course-card-time">3—5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Генерируем идеи с ChatGPT</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Как превратить нейросеть в генератор идей</p>
+                                            <p>Как решить проблему «чистого листа»</p>
+                                            <p>Как отмести плохие идеи, а хорошие — доработать</p>
+                                            <p>Как создать виртуальную команду для мозгового штурма</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img7.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>6 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">15—20 минут чтения</span>
+                                                    <span class="course-card-time">3—5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Работаем с данными в ChatGPT</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Как пересказывать и сокращать чужие тексты</p>
+                                            <p>Как разобраться в непонятных данных вроде анализа крови</p>
+                                            <p>Как визуализировать любую информацию в виде графиков, схем и таблиц</p>
+                                            <p>Как работать с данными из файлов или Интернета</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img8.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>7 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">15—20 минут чтения</span>
+                                                    <span class="course-card-time">3—5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Учимся с ChatGPT</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Как подготовиться к любому экзамену с ChatGPT</p>
+                                            <p>Как разобраться в сложных терминах и концепциях</p>
+                                            <p>Как попросить нейросеть объяснить решение любой задачи</p>
+                                            <p>Почему не стоит полностью полагаться на нейросеть в учебе</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img9.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>8 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">15—20 минут чтения</span>
+                                                    <span class="course-card-time">3—5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Учим языки с ChatGPT</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Какие языки стоит учить с нейросетью</p>
+                                            <p>Как переводить тексты и запоминать новые слова без страданий</p>
+                                            <p>Как разобраться в грамматике и не заснуть</p>
+                                            <p>Как общаться в чате с нейросетью на любые темы</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img10.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>9 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">20—25 минут чтения</span>
+                                                    <span class="course-card-time">5—7 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Создаем картинки в Midjourney. Базовый
+                                                уровень</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Какие картинки создают нейросети</p>
+                                            <p>Как генерировать картинки в Midjourney</p>
+                                            <p>Как составить идеальный запрос для генерации картинок в любой нейросети
+                                            </p>
+                                            <p>Как улучшить запрос для Midjourney: лайфхаки</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img11.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>10 урок</span>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">20—25 минут чтения</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Создаем картинки в Midjourney. Продвинутый
+                                                уровень</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Какие команды помогут контролировать результат генерации</p>
+                                            <p>Как создать картинки, похожие на те, что вам нужны</p>
+                                            <p>Как использовать новые функции Midjourney</p>
+                                            <p>Что добавить в промпт, чтобы создавать фотошедевры</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img12.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <img src="images/icons/close-lock.svg" alt="">
+                                                    <span>Экзамен</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title">Вспомните ключевые принципы работы
+                                                с нейросетями</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>12 вопросов и диплом</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="course-card">
+                                <a href="#!" class="cours__card-wrap">
+                                    <img src="images/ai-course-img13.png" alt="" class="course-img">
+                                    <div class="course__card-content">
+                                        <div class="course__card-top">
+                                            <div class="course__card-info">
+                                                <div class="course__card-icon">
+                                                    <b>Бонусный урок</b>
+                                                </div>
+                                                <div class="course-card-times">
+                                                    <span class="course-card-time">10—15 минут чтения</span>
+                                                    <span class="course-card-time">от 5 минут практики</span>
+                                                </div>
+                                            </div>
+
+                                            <h3 class="course__card-title course__card-title-gold">Живем в мире
+                                                с нейросетями</h3>
+                                        </div>
+
+                                        <div class="course__card-text">
+                                            <p>Заменят ли нейросети людей</p>
+                                            <p>Как понять, что текст и картинка сгенерированы нейросетью</p>
+                                            <p>Кому принадлежит контент нейросети и как не нарушать авторские права</p>
+                                            <p>Какие еще нейросети можно попробовать</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="course-diplom">
+                            <img src="images/diplom.png" alt="" class="diplom-img diplom-img1">
+                            <img src="images/diplom-img-mob.png" alt="" class="diplom-img diplom-img2">
+                        </div>
+
+                        <div class="course-suitable">
+                            <div class="course-suitable-info">
+                                <h2 class="course-suitable-title sec-title">Кому подойдет курс</h2>
+                            </div>
+                            <div class="course__suitable-boxs">
+                                <div class="course__suitable-box">
+                                    <img src="images/ai-suitable-icon1.svg" alt="">
+                                    <p>Всем, кто хочет попробовать новые технологии, но сомневается в своих навыках</p>
+                                </div>
+                                <div class="course__suitable-box">
+                                    <img src="images/ai-suitable-icon2.svg" alt="">
+                                    <p>Тем, кто уже попробовал, разочаровался и решил дать нейросетям второй шанс</p>
+                                </div>
+                                <div class="course__suitable-box">
+                                    <img src="images/ai-suitable-icon3.svg" alt="">
+                                    <p>Тем, кому надоело тратить время на рутинные задачи и хочется иметь личного
+                                        нейроассистента</p>
+                                </div>
+                                <div class="course__suitable-box">
+                                    <img src="images/ai-suitable-icon4.svg" alt="">
+                                    <p>Тем, кто слышит о нейросетях отовсюду и переживает, что пропускает что-то важное
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-suitable">
+                            <div class="course-suitable-info">
+                                <h2 class="course-suitable-title sec-title">Кому не подойдет курс</h2>
+                            </div>
+                            <div class="course__suitable-boxs">
+                                <div class="course__suitable-box">
+                                    <img src="images/ai-suitable-icon5.svg" alt="">
+                                    <p>Тем, кому интересны технические аспекты нейросетей. На этом курсе не откроют
+                                        неочевидные функции API ChatGPT и не научат встраивать Stable Diffusion
+                                        в телеграм-бота</p>
+                                </div>
+                                <div class="course__suitable-box">
+                                    <img src="images/ai-suitable-icon6.svg" alt="">
+                                    <p>Тем, кто уже хорошо знаком с нейросетями и давно применяет их. Курс — точка входа
+                                        для начинающих</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-suitable-imgs">
+                            <img src="images/ai-suitable-img1.png" alt=""
+                                class="course-suitable-img course-suitable-img1">
+                            <img src="images/ai-suitable-img2.png" alt=""
+                                class="course-suitable-img course-suitable-img2">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Course end -->
+
+            <!-- Practice start -->
+            <section class="practice" data-scene>
+                <div class="container">
+                    <div class="practice-content">
+                        <div class="practice-info">
+                            <h1 class="practice-title sec-title">Все примеры в курсе — из реальных диалогов с нейросетью
+                            </h1>
+                            <p class="practice-text">Мы знаем, как составить запросы, которые дадут результат, а каких
+                                лучше избегать.</p>
+                        </div>
+
+                        <div class="practice-imgs">
+                            <img src="images/ai-practice-img1.png" alt="" class="practice-img" data-aos="fade-up"
+                                data-aos-delay="400">
+                            <img src="images/ai-practice-img2.png" alt="" class="practice-img" data-aos="fade-up"
+                                data-aos-delay="400">
+                            <img src="images/ai-practice-img3.png" alt="" class="practice-img" data-aos="fade-up"
+                                data-aos-delay="400">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Practice end -->
+
+            <!-- Experts start -->
+            <section class="experts">
+                <div class="container">
+                    <div class="experts-content">
+                        <h2 class="experts-title sec-title">Авторы и их нейроаватарки</h2>
+                        <div class="experts-items">
+                            <div class="experts-item">
+                                <img src="images/experts-item-img14.png" alt="" class="experts-item-img">
+                                <div class="experts-item-info">
+                                    <div class="experts-item-title">
+                                        <a href="#!">Женя Кузьмин</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none">
+                                            <path
+                                                d="M6.08859 2.48535C5.42585 2.48433 4.88776 3.02076 4.88674 3.68351C4.88572 4.34625 5.42215 4.88433 6.0849 4.88535L9.18106 4.89012L3.16348 10.9077C2.69485 11.3763 2.69485 12.1361 3.16348 12.6048C3.63211 13.0734 4.39191 13.0734 4.86054 12.6048L10.8786 6.58664L10.8834 9.68366C10.8844 10.3464 11.4225 10.8828 12.0852 10.8819C12.7479 10.8808 13.2844 10.3428 13.2834 9.68L13.2743 3.69274C13.2732 3.03143 12.7374 2.49559 12.0761 2.49457L6.08859 2.48535Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                    <p class="experts-item-text">Главный по интернету в техноредакции Тинькофф Журнала.
+                                        Семь лет описывает, как меняются онлайн-среда и технологии. Автор
+                                        <a href="#!">одного из самых подробных гайдов по нейросети Midjourney</a>
+                                        в рунете
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="experts-item">
+                                <img src="images/experts-item-img15.png" alt="" class="experts-item-img">
+                                <div class="experts-item-info">
+                                    <div class="experts-item-title">
+                                        <a href="#!">Даша Лейзаренко</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 16 16" fill="none">
+                                            <path
+                                                d="M6.08859 2.48535C5.42585 2.48433 4.88776 3.02076 4.88674 3.68351C4.88572 4.34625 5.42215 4.88433 6.0849 4.88535L9.18106 4.89012L3.16348 10.9077C2.69485 11.3763 2.69485 12.1361 3.16348 12.6048C3.63211 13.0734 4.39191 13.0734 4.86054 12.6048L10.8786 6.58664L10.8834 9.68366C10.8844 10.3464 11.4225 10.8828 12.0852 10.8819C12.7479 10.8808 13.2844 10.3428 13.2834 9.68L13.2743 3.69274C13.2732 3.03143 12.7374 2.49559 12.0761 2.49457L6.08859 2.48535Z"
+                                                fill="white" />
+                                        </svg>
+                                    </div>
+                                    <p class="experts-item-text">Техноредакторка Тинькофф Журнала. Создательница и
+                                        авторка <a href="#!">рассылки о нейросетях «Капча».</a> Пять лет работала в
+                                        медиа про интернет и технологии. Каждый день рассказывает, как пользоваться
+                                        новыми приложениями и сервисами</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Experts end -->
+
+            <!-- Course app start -->
+            <section class="course-app">
+                <div class="container">
+                    <div class="course-answer">
+                        <h2 class="course-answer-title sec-title">Ответы на частые вопросы</h2>
+                        <div class="course-answer-items">
+                            <div class="course-answer-item">
+                                <span>В каком формате проходит обучение?</span>
+                                <p class="course-answer-text">
+                                    Каждый урок — это лонгрид с иллюстрациями, примерами, фотографиями, схемами
+                                    и заданиями. Некоторые задания можно выполнить прямо в уроках, а для других
+                                    понадобятся дополнительные программы или ручка и лист бумаги. А иногда в конце
+                                    уроков
+                                    бывает тест для закрепления пройденного материала.
+                                </p>
+                            </div>
+                            <div class="course-answer-item">
+                                <span>Уроки выходят сразу или по отдельности?</span>
+                                <p class="course-answer-text">
+                                    Обычно мы публикуем уроки постепенно. Даты выхода уроков — в списке уроков, выше
+                                    на этой странице. Если дат нет, значит, все уроки уже вышли и можно пройти курс
+                                    целиком.
+                                </p>
+                            </div>
+                            <div class="course-answer-item">
+                                <span>Сколько длится курс?</span>
+                                <p class="course-answer-text">У курсов нет ограничений по времени: они в текстовом
+                                    формате, поэтому проходить их можно в удобном темпе.</p>
+                            </div>
+                            <div class="course-answer-item">
+                                <span>Можно пройти курс повторно?</span>
+                                <p class="course-answer-text">Да, курс можно проходить сколько угодно раз, все материалы
+                                    останутся у вас.</p>
+                            </div>
+                            <div class="course-answer-item">
+                                <span>Я смогу задать вопросы автору курса?</span>
+                                <p class="course-answer-text">Если возникнут вопросы по теме урока — пишите нам:
+                                    передадим их авторам курса и постараемся найти ответ.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-write">
+                        <h2 class="course-write-title sec-title">Напишите нам</h2>
+                        <p class="course-write-text">Если у вас есть вопросы — пишите <a
+                                href="mailto:uchebnik@tinkoffjournal.ru">на uchebnik@tinkoffjournal.ru</a>. Мы читаем
+                            все письма и постараемся ответить вам как можно быстрее.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Course app end -->
+
+            <!-- Course team start -->
+            <section class="course-team">
+                <div class="container">
+                    <h2 class="course-team-title sec-title">Команда курса</h2>
+                    <div class="course-team-content">
+                        <div class="course-team-items">
+                            <div class="course-team-item">
+                                <span class="team-item-name">Спроектировали</span>
+                                <div class="course-team-box">
+                                    <img src="images/team-person34.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Ксения Баранова</span>
+                                        <p class="team-person-job">методистка</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-team-item">
+                                <span class="team-item-name">Отредактировали</span>
+                                <div class="course-team-box">
+                                    <img src="images/team-person5.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Никита Юкович</span>
+                                        <p class="team-person-job">шеф-редактор</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person29.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Катя Лебедева</span>
+                                        <p class="team-person-job">корректор</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person27.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Артем Рыжков</span>
+                                        <p class="team-person-job">редактор</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person4.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Андрей Абрамов</span>
+                                        <p class="team-person-job">редактор</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person35.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Артем Калеев</span>
+                                        <p class="team-person-job">шеф-редактор рубрики «Технологии»
+                                            в Тинькофф Журнале</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person32.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Оля Попова</span>
+                                        <p class="team-person-job">выпускающий редактор</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-team-items">
+                            <div class="course-team-item">
+                                <span class="team-item-name">Оформили</span>
+                                <div class="course-team-box">
+                                    <img src="images/team-person12.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Катя Молчанова</span>
+                                        <p class="team-person-job">арт-директриса</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person10.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Вика Бойко</span>
+                                        <p class="team-person-job">ведущая дизайнерка</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person11.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Карина Левшова</span>
+                                        <p class="team-person-job">дизайнерка</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person13.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Аня Лысяк</span>
+                                        <p class="team-person-job">фоторедакторка</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person36.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Лев Переулков</span>
+                                        <p class="team-person-job">нейродизайнер</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person14.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Вячеслав Хохлов</span>
+                                        <p class="team-person-job">верстальщик</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person15.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Виктор Корепанов</span>
+                                        <p class="team-person-job">верстальщик</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person37.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Денис Моисеев</span>
+                                        <p class="team-person-job">верстальщик</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-team-item">
+                                <span class="team-item-name">Организовали</span>
+                                <div class="course-team-box">
+                                    <img src="images/team-person17.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Оля Дуб</span>
+                                        <p class="team-person-job">продюсер</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person31.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Ася Терехова</span>
+                                        <p class="team-person-job">менеджерка проекта</p>
+                                    </div>
+                                </div>
+                                <div class="course-team-box">
+                                    <img src="images/team-person18.svg" alt="">
+                                    <div class="course-team-info">
+                                        <span class="team-preson-name">Катя Летова</span>
+                                        <p class="team-person-job">руководитель проекта</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Course team end -->
+
+            <!-- More course start -->
+            <section class="more-course">
+                <div class="container">
+                    <div class="more__course-content">
+                        <h2 class="more-course-title sec-title">Еще курсы</h2>
+
+                        <div class="more__course-items">
+                            <a href="#!" class="more__course-item">
+                                <img src="images/more-course-img5.png" alt="">
+                                <div class="more__course-info">
+                                    <b>Как победить выгорание</b>
+                                    <span>5 уроков по 20–30 минут</span>
+                                </div>
+                            </a>
+                            <a href="#!" class="more__course-item">
+                                <img src="images/more-course-img11.png" alt="">
+                                <div class="more__course-info">
+                                    <b>Генеалогия: исследуем собственную историю</b>
+                                    <span>10 уроков по&nbsp;25–35 минут</span>
+                                    <p>3900 ₽</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="more__course-item">
+                                <img src="images/more-course-img7.png" alt="">
+                                <div class="more__course-info">
+                                    <b>Экология: начать сортировать мусор</b>
+                                    <span>6 уроков по&nbsp;10–12 минут</span>
+                                </div>
+                            </a>
+                            <a href="#!" class="more__course-item">
+                                <img src="images/more-course-img8.png" alt="">
+                                <div class="more__course-info">
+                                    <b>Как&nbsp;выбрать и&nbsp;воспитать собаку</b>
+                                    <span>8 уроков по&nbsp;10–20 минут</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <a href="#!" class="more__course-link">Смотреть все <img src="images/icons/right-arrow.svg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </section>
+            <!-- More course end -->
+
+        </main>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="footer-content">
+                    <div class="footer-top">
+                        <div class="footer-socicial">
+                            <a href="#!" class="footer-socicial-link"><img src="images/icons/telegram.svg" alt=""></a>
+                            <a href="#!" class="footer-socicial-link"><img src="images/icons/wk.svg" alt=""></a>
+                        </div>
+
+                        <div class="footer-top-nav">
+                            <a href="#!" class="footer-nav-link">Об Учебнике</a>
+                            <a href="#!" class="footer-nav-link">Контакты</a>
+                            <a href="#!" class="footer-nav-link">Курсы для компаний</a>
+                            <a href="#!" class="footer-nav-link">Юридическая информация</a>
+                            <a href="#!" class="footer-nav-link">Сообщить о проблеме</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <img src="images/icons/footer-logo.svg" alt="">
+                        <p class="footer-bottom-text">АО «Тинькофф Банк» лицензия №2673 2023 <a
+                                href="mailto:uchebnik@tinkoffjournal.ru">uchebnik@tinkoffjournal.ru</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Aos js cdn link -->
+    <script src="libs/js/aos.js"></script>
+    <!-- Script js -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

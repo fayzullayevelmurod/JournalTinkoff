@@ -109,11 +109,6 @@
     // Course media
     .course {
         padding-bottom: 53px;
-
-        .container{
-            padding: 0;
-        }
-
         .course-content{
             gap: 50px;
             .course-info{
@@ -162,7 +157,6 @@
                 }
             }
             .course-suitable{
-                padding: 0px 16px;
                 margin-top: 0;
                 .course__suitable-boxs{
                     display: flex;
@@ -239,9 +233,6 @@
 
     // More course media
     .more-course{
-        .container{
-            padding: 0;
-        }
         .more__course-content{
             padding: 21px 37px 20px 21px;
 

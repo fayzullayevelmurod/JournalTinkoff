@@ -501,6 +501,12 @@ path {
             .suitable-imgs-title{
                 margin-bottom: 24px;
             }
+            .suitable-imgs-text{
+                color: #D0D0D2;
+                font-size: 16.469px;
+                line-height: 25px; 
+                margin-bottom: 24px;
+            }
             .course-suitable-img{
                 width: 100%;
             }
@@ -586,6 +592,12 @@ path {
                 color: #D0D0D2;
                 font-size: 14.648px;
                 line-height: 20px;
+                a{
+                    text-decoration: underline;
+                }
+            }
+            .experts-item-text2{
+                margin-top: 25px;
             }
         }
     }
@@ -922,6 +934,14 @@ path {
                         color: #D0D0D2;
                         font-size: 14.766px;
                         line-height: 20px; 
+                    }
+                    p{
+                        color: #FFF;
+                        font-size: 16.602px;
+                        border-radius: 20px;
+                        background: rgba(255, 255, 255, 0.20);
+                        padding: 4px 9.8px 4px 10px;
+                        max-width: fit-content;
                     }
                 }
             }
